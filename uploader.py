@@ -35,5 +35,6 @@ async def get_drives(gc):
 if __name__ == "__main__":
     credentials = Credentials().__dict__
     graph_client = make_client(**credentials)
+    #https://stackoverflow.com/questions/46802055/tenant-does-not-have-a-spo-license
     asyncio.run(get_drives(graph_client))
 
